@@ -1,3 +1,5 @@
-Nama: Grase
-ID Kelas: 11S21053
-API Key untuk Map: [Jika menggunakan API Key untuk map service]
+Nama: Grase Thessalonika Panjaitan
+Username GitHub: ifs21053-itdel
+Username dicoding: grasethessa
+Nama repositori: dicoding-story-app
+URL Deployment : https://ifs21053-itdel.github.io/dicoding-story-app/
