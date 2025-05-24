@@ -21,7 +21,19 @@
   <link rel="manifest" href="./app.webmanifest">
 
   <script src="https://cdn.jsdelivr.net/npm/idb@7.1.1/build/idb.min.js"></script>
-  
+  <script type="text/javascript">
+  (function(l) {
+    if (l.search[1] === '/' ) {
+      var decoded = l.search.slice(1).split('&').map(function(s) { 
+        return s.replace(/~and~/g, '&')
+      }).join('?');
+      window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+      );
+    }
+  }(window.location))
+</script>
+
   <title>Dicoding Story</title>
 </head>
 <body>

@@ -9,7 +9,7 @@ module.exports = merge(common, {
    output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    publicPath: '/dicoding-story-app/' // Ganti dengan nama repository GitHub Anda
+    publicPath: '/dicoding-story-app/' 
   },
   module: {
     rules: [
@@ -102,5 +102,13 @@ module.exports = merge(common, {
         },
       ],
     }),
+    new CopyWebpackPlugin({
+    patterns: [
+      {
+        from: path.resolve(__dirname, 'src/404.html'),
+        to: path.resolve(__dirname, 'dist')
+      }
+    ]
+  })
   ],
 });
